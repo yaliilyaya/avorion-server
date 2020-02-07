@@ -1,0 +1,13 @@
+{
+  "dc4d46576d571f546bb8b352066a7e13": {
+    "id": "dc4d46576d571f546bb8b352066a7e13",
+    "game": "other",
+    "name": "game-server",
+    "host": "game-server",
+    "users": [],
+    "web": false,
+    "active": true,
+    "rcon_port": 27015,
+    "rcon_password": "123qweasd"
+  }
+}

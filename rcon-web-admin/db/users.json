@@ -1,0 +1,12 @@
+{
+  "bc7b6ae6dc86cdd1441ddbb0ee2fcc7c": {
+    "password": "9eea791b59f57bca3efb77cf8a566fd6",
+    "id": "bc7b6ae6dc86cdd1441ddbb0ee2fcc7c",
+    "username": "admin",
+    "restrictcommands": "",
+    "restrictwidgets": [],
+    "readonlyoptions": false,
+    "admin": true,
+    "loginHash": "4bac1d3d3389ab32a41d053763aaf673bf8bb7ff144f48a26011320647cbe00a"
+  }
+}
