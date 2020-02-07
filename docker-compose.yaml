@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  game-server:
+    image: rfvgyhn/avorion
+    volumes:
+      - ./data:/home/steam/.avorion/galaxies/avorion_galaxy
+    ports:
+      - 27000:27000
+      - 27000:27000/udp
+      - 27003:27003/udp
+      - 27020:27020/udp
+      - 27021:27021/udp
+  rcon-admin: # admin/admin
+    image: itzg/rcon
+    ports:
+      - 4326:4326
+      - 4327:4327
+    volumes:
+      - ./rcon-web-admin/db:/opt/rcon-web-admin/db
+      - ./rcon-web-admin/widgets:/opt/rcon-web-admin/public/widgets
+#docker run -d --name avorion \
+#-p 27000:27000 \
+#-p 27000:27000/udp \
+#-p 27003:27003/udp \
+#-p 27020:27020/udp \
+#-p 27021:27021/udp \
+#-v ./data:/home/steam/.avorion/galaxies/avorion_galaxy \
+#rfvgyhn/avorion
