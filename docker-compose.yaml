@@ -6,16 +6,17 @@ services:
     volumes:
       - ./game-server:/home/steam/.avorion/galaxies/avorion_galaxy
     ports:
-      - 27000:27000
-      - 27000:27000/udp
-      - 27003:27003/udp
-      - 27020:27020/udp
-      - 27021:27021/udp
+      - 27000:27000 #public game port
+      - 27000:27000/udp #public dop port
+      - 27003:27003/udp #public dop port
+      - 27020:27020/udp #public dop port
+      - 27021:27021/udp #public dop port
+      # - 27015:27015 #rcon port - use internal network
   rcon-web-admin: # admin/admin
     image: itzg/rcon
     ports:
-      - 4326:4326
-      - 4327:4327
+      - 4326:4326 #public port
+      - 4327:4327 #UI web socket post
     volumes:
       - ./rcon-web-admin/db:/opt/rcon-web-admin/db
       - ./rcon-web-admin/widgets:/opt/rcon-web-admin/public/widgets
